@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #ead9ad;
+            color: #333;
+        }
+        nav {
+            width: 100%;
+            height: 70px;
+            background: #e8d9c3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            box-shadow: 2px 0px 5px grey;
+        }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .logo span {
+            color: brown;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .menu a:hover {
+            background: brown;
+            color: white;
+            border-radius: 5px;
+        }
+        .menu-section {
+            padding: 50px;
+            text-align: center;
+        }
+        .menu-section h1 {
+            font-size: 3em;
+            color: brown;
+            margin-bottom: 20px;
+        }
+        .menu-category {
+            margin-top: 50px;
+        }
+        .menu-category h2 {
+            font-size: 2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu-item {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            font-size: 1.5em;
+            margin: 15px;
+            color: #444;
+        }
+        .menu-item p {
+            font-size: 1em;
+            color: #666;
+            margin: 0 15px 15px;
+        }
+        .menu-item .price {
+            font-size: 1.2em;
+            color: brown;
+            margin: 0 15px 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><span>Fam</span>ily Restaurant</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="aboutt.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contactt.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="menu-section">
+        <h1>Our Menu</h1>
+
+        <!-- Starters Section -->
+        <div class="menu-category">
+            <h2>Starters</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.qkBzinUWEm0g-uL_88wK9QHaLH?w=186&h=279&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Soup">
+                    <h3>Tomato Soup</h3>
+                    <p>Warm and comforting tomato soup served with croutons.</p>
+                    <p class="price">$4.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.UZHTjA2uXLWrvKQmAQ8KCwHaLG?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Spring Rolls">
+                    <h3>Spring Rolls</h3>
+                    <p>Golden-fried spring rolls stuffed with vegetables.</p>
+                    <p class="price">$6.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th?id=OSK.c0f617c50a247cc5868a864697b6298e&w=164&h=123&rs=2&qlt=80&o=6&cdv=1&dpr=1.3&pid=16.1https://th.bing.com/th?id=OSK.c0f617c50a247cc5868a864697b6298e&w=164&h=123&rs=2&qlt=80&o=6&cdv=1&dpr=1.3&pid=16.1" alt="Bruschetta">
+                    <h3>Bruschetta</h3>
+                    <p>Grilled bread topped with fresh tomatoes and basil.</p>
+                    <p class="price">$5.99</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="menu-category">
+            <h2>Main Course</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.odDTLFzcZlPGNUGqAFIDVwHaKX?w=186&h=260&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Pasta">
+                    <h3>Chicken Alfredo Pasta</h3>
+                    <p>Creamy pasta with parmesan cheese.</p>
+                    <p class="price">$12.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.XzUnt5Afjbz_9Bmkng2IMQHaEK?rs=1&pid=ImgDetMain" alt="Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza topped with fresh mozzarella and basil.</p>
+                    <p class="price">$10.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.T03X9LbsFLOdL9pIbgcwTAHaKX?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Burger">
+                    <h3>Cheeseburger</h3>
+                    <p>Juicy beef burger topped with melted cheese and pickles.</p>
+                    <p class="price">$8.99</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="menu-category">
+            <h2>Desserts</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.FCxxWOxurMynH7WH2QkUgQHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Cheesecake">
+                    <h3>Cheesecake</h3>
+                    <p>Rich and creamy cheesecake with a graham cracker crust.</p>
+                    <p class="price">$6.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.86dJIBRg_s7ePYSgYcaHLwHaFW?w=260&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Brownie">
+                    <h3>Chocolate Brownie</h3>
+                    <p>Decadent chocolate brownie served with vanilla ice cream.</p>
+                    <p class="price">$5.99</p>
+                </div>
+            
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.vJLQwN11eTQdZiW7JeE13QHaLH?w=186&h=279&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Tiramisu">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with layers of mascarpone and coffee.</p>
+                    <p class="price">$7.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

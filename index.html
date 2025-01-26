@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        *{
+            padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;
+        }
+        header{
+            width:100%;
+            height: 70vh;
+            background: url(background.webp) no-repeat center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        
+        nav{
+            width: 100%;
+            height:70px;
+            padding: 0px 70px;
+            background: #f9ecd8;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 2px 0px 5px grey;
+        }
+        .logo{
+            font-weight: bold;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .logo span{
+            color:brown;
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu a:hover{
+            background-color: brown;
+            color:white;
+            border-radius: 5px;
+        }
+        .header-content {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family:'Roboto', sans-serif;
+}
+.header-content .btn {
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.header-content .btn:hover {
+    background-color: darkred;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+footer .social-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+footer .social-links a:hover {
+   color: brown;
+}
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color:#e1d3bd;
+}
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.about p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  color: #555;
+}
+.reviews {
+    padding: 50px;
+    background-color: #fff3e0;
+    text-align: center;
+}
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.review {
+    margin-bottom: 20px;
+}
+.review p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+.review h4 {
+    font-size: 1em;
+  color: #333;
+}
+.gallery {
+    padding: 50px;
+    background-color:#eadecb;
+    text-align: center;
+}
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.photos img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.photos img:hover {
+    transform: scale(1.1);
+}
+.cta {
+    padding: 50px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.cta .btn {
+    text-decoration: none;
+    background-color: white;
+    color: brown;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.cta .btn:hover {
+    background-color: #ffe6cc;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span>Fam</span>ily Restaurant</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutt.html">About Us</a>
+                <a href="menuu.html">Menu</a>
+                <a href="contactt.html">Contact</a>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to Family Restaurant</h1>
+            <p>Your favourite place for delicious meals and great ambiance</p>
+            <a href="menu.html" class="btn">Explore Menu</a>
+        </div>
+        
+    </header>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Family Restaurant has been serving delicious meals for over a decade. Our mission is to bring joy to your dining experience with our exceptional menu, warm ambiance, and excellent service.</p>
+    </section>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="photos">
+            <img src="ind1.jpeg" alt="Photo 1">
+            <img src="ind2.jpeg" alt="Photo 2">
+            <img src="ind3.jpeg" alt="Photo 3">
+            <img src="ind4.webp" alt="Photo 4">
+        </div>
+    </section>
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review">
+            <p>"The food was amazing, and the service was excellent. Highly recommend!"</p>
+            <h4>- John Doe</h4>
+        </div>
+        <div class="review">
+            <p>"Great ambiance and a perfect place for family dinners."</p>
+            <h4>- Jane Smith</h4>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Book Your Table Today!</h2>
+        <p>Enjoy a delightful dining experience with us.</p>
+        <a href="#" class="btn">Reserve Now</a>
+    </section>
+    <footer>
+        <p>2025 Family Restaurant. All rights reserved. </p>
+        <div class="social-links">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
